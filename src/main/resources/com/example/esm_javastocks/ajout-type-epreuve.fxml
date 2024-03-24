@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EEEEEE; -fx-border-color: #778899; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esm_javastocks.AjoutTypeEpreuveController">
+   <children>
+      <Label layoutX="382.0" layoutY="143.0" style="-fx-text-fill: #222831;" text="Ajouter Un Type D'épreuve">
+         <font>
+            <Font name="Arial Bold" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRetour" layoutX="62.0" layoutY="631.0" mnemonicParsing="false" onAction="#onRetourButtonClick" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="Retour">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="547.0" layoutY="312.0" style="-fx-text-fill: #222831;" text="Libellé du type d'épreuve">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="libelle" alignment="CENTER" layoutX="563.0" layoutY="368.0" prefHeight="25.0" prefWidth="154.0" promptText="Type d'épreuve" />
+      <Button layoutX="572.0" layoutY="493.0" mnemonicParsing="false" onAction="#onAjoutButtonClick" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #EEEEEE; -fx-text-fill: #222831; -fx-border-width: 1; -fx-border-color: #222831; -fx-border-radius: 15px;" text="Ajouter">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="confirmationLabel" alignment="CENTER" layoutX="342.0" layoutY="224.0" prefHeight="26.0" prefWidth="599.0" style="-fx-text-fill: black;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmationLabel" alignment="CENTER" layoutX="342.0" layoutY="250.0" prefHeight="26.0" prefWidth="599.0" style="-fx-text-fill: black;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EEEEEE; -fx-border-color: #778899; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esm_javastocks.SuppressionArticleController">
+   <children>
+      <Button fx:id="buttonRetour" layoutX="56.0" layoutY="632.0" mnemonicParsing="false" onAction="#onRetourButtonClick" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="Retour">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="438.0" layoutY="80.0" style="-fx-text-fill: #222831;" text="Supprimer un article">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="234.0" style="-fx-text-fill: #222831;" text=" Libellé :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="270.0" style="-fx-text-fill: #222831;" text=" Catégorie :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="640.0" layoutY="302.0" style="-fx-text-fill: #222831;" text="Taille :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="631.0" layoutY="337.0" style="-fx-text-fill: #222831;" text="Couleur :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="640.0" layoutY="375.0" style="-fx-text-fill: #222831;" text="Poids :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="581.0" layoutY="494.0" mnemonicParsing="false" onAction="#onSupprimeButtonClick" prefHeight="43.0" prefWidth="137.0" style="-fx-background-color: #EEEEEE; -fx-text-fill: #222831; -fx-border-width: 1; -fx-border-color: #222831; -fx-border-radius: 15px;" text="Supprimer">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="628.0" layoutY="408.0" style="-fx-text-fill: #222831;" text="Quantité :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="289.0" style="-fx-text-fill: #222831;" text="Choisissez un article par ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="idComboBox" layoutX="343.0" layoutY="333.0" prefHeight="25.0" prefWidth="163.0" promptText="Selectionnez un ID" />
+      <Label layoutX="324.0" layoutY="142.0" />
+      <Label fx:id="afficheArticlelibelle" layoutX="707.0" layoutY="234.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="afficheArticlecategorie" layoutX="718.0" layoutY="270.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="afficheArticletaille" layoutX="695.0" layoutY="302.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="afficheArticlecouleurs" layoutX="707.0" layoutY="337.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="afficheArticlequantite" layoutX="713.0" layoutY="411.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="afficheArticlepoids" layoutX="701.0" layoutY="378.0" prefHeight="25.0" prefWidth="259.0" style="-fx-text-fill: #222831;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmationLabel" alignment="CENTER" layoutX="319.0" layoutY="138.0" prefHeight="43.0" prefWidth="643.0" style="-fx-text-fill: black; -fx-text-alignment: center;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
